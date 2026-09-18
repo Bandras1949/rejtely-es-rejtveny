@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Solve the Story</title>
+<meta property="og:title" content="Solve the Story">
+<meta property="og:description" content="Short mysteries with a sudoku key. A new one every week.">
+<meta property="og:type" content="website">
+<style>
+:root{ --sarga:#F2B705; --fekete:#111; }
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html,body{margin:0;padding:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background:var(--sarga); color:var(--fekete);}
+.wrap{max-width:480px; margin:0 auto; padding:28px 20px 60px;}
+header{padding-bottom:18px; border-bottom:3px solid var(--fekete); margin-bottom:28px;}
+.sorozat{font-size:13px; letter-spacing:.18em; text-transform:uppercase; font-weight:800;}
+.sorozat .es{font-size:16px; font-weight:900;}
+h1{font-size:clamp(30px,7vw,40px); font-weight:900; line-height:1.02; letter-spacing:-.02em; margin:10px 0 8px;}
+.lead{font-size:16px; line-height:1.5; opacity:.85; margin:0;}
+.nyelv{margin-top:14px; font-size:14px; font-weight:700;}
+.nyelv a{color:var(--fekete);}
+.lista{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px;}
+.kartya{display:block; text-decoration:none; color:var(--fekete);
+  border:3px solid var(--fekete); padding:18px; background:rgba(255,255,255,.35);
+  transition:transform .15s ease, background .15s ease;}
+.kartya:active{transform:scale(.98); background:rgba(255,255,255,.6);}
+.szam{font-size:13px; font-weight:800; letter-spacing:.1em; opacity:.7; margin:0 0 6px;}
+.cim{font-size:22px; font-weight:900; line-height:1.15; margin:0 0 8px;}
+.kerdes{font-size:15px; line-height:1.4; opacity:.85; margin:0;}
+.nyil{float:right; font-size:20px; font-weight:900;}
+footer{margin-top:40px; padding-top:20px; border-top:3px solid var(--fekete);
+  font-size:13px; opacity:.75; line-height:1.5;}
+footer a{color:var(--fekete);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="sorozat">András Bánky <span class="es">·</span> A weekly mystery</div>
+    <h1>Solve the Story</h1>
+    <p class="lead">Short mysteries with a sudoku key. One closed case, one puzzle you can fill in, five minutes altogether. Mrs Pike sees everything – but the answer is yours to find.</p>
+    <p class="nyelv"><a href="../">Magyar változat →</a></p>
+  </header>
+
+  <ul class="lista">
+    <li>
+      <a class="kartya" href="01/">
+        <div class="szam">NO. 01</div>
+        <div class="cim">Where did the five hundred pounds go?<span class="nyil">→</span></div>
+        <div class="kerdes">Where should Mrs Pike look for the envelope?</div>
+      </a>
+    </li>
+  </ul>
+
+  <footer>
+    A new mystery every week. The puzzle is optional – the end of the story is always there.
+  </footer>
+
+</div>
+</body>
+</html>
 
