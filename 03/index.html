@@ -22,7 +22,9 @@ html,body{margin:0;padding:0;height:100%;overflow:hidden;
 /* --- fejléc --- */
 header{flex:0 0 auto; padding:14px 18px 8px; display:flex; justify-content:center;
   align-items:baseline; border-bottom:2px solid var(--fekete); margin:0 16px;}
-.sorozat{font-size:12px; letter-spacing:.18em; text-transform:uppercase; font-weight:800;}
+.sorozat{font-size:12px; letter-spacing:.18em; text-transform:uppercase; font-weight:800;
+  color:inherit; text-decoration:none; display:inline-block;}
+.sorozat:active{opacity:.55;}
 .sorozat .es{font-size:15px; font-weight:900;}
 
 /* --- kártyasáv --- */
@@ -108,7 +110,7 @@ footer{position:fixed; left:0; right:0; bottom:0; padding:12px 18px 16px;
 <body>
 <div id="app">
   <header>
-    <div class="sorozat">Rejtély <span class="es">&amp;</span> Rejtvény</div>
+    <a class="sorozat" href="/">Rejtély <span class="es">&amp;</span> Rejtvény</a>
   </header>
 
   <div id="sav">
