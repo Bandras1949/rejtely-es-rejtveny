@@ -366,16 +366,16 @@ document.getElementById('feliratkozas').onclick = ()=>{
   const e = document.getElementById('email').value.trim();
   if(!e || !e.includes('@')){ alert('Please enter an email address.'); return; }
   esemeny('feliratkozas');
-  document.getElementById('feliratkozas').textContent = 'Thanks – we will let you know.';
+  document.getElementById('feliratkozas').textContent = 'Thanks, we\'ll let you know.';
   document.getElementById('feliratkozas').disabled = true;
 };
 const em = document.getElementById('emailkuld');
 em.href = 'mailto:?subject=' + encodeURIComponent('Did you get it?')
-  + '&body=' + encodeURIComponent('Where did the five hundred pounds go? Rövid krimi, a megoldás nem is olyan egyszerű. ' + location.href);
+  + '&body=' + encodeURIComponent('Where did the five hundred pounds go? A short mystery — the answer is not as simple as it looks. ' + location.href);
 em.onclick = ()=>esemeny('megosztas_email');
 document.getElementById('megoszt').onclick = async ()=>{
   esemeny('megosztas');
-  const adat = {title:'Rejtély & Rejtvény', text:'Where did the five hundred pounds go? Did you get it?',
+  const adat = {title:'Solve the Story', text:'Where did the five hundred pounds go? Did you get it?',
                 url: location.href};
   if(navigator.share){ try{ await navigator.share(adat); }catch(e){} }
   else { try{ await navigator.clipboard.writeText(location.href);
